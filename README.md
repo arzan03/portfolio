@@ -1,8 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio
 
-## Getting Started
+A modern, interactive portfolio website showcasing my expertise in DevOps, Cloud Architecture, and Infrastructure automation. Built with Next.js, featuring a live terminal simulation and 3D tech ecosystem visualization.
 
-First, run the development server:
+## 🚀 Features
+
+- **Interactive Terminal**: Real-time terminal simulation with authentic DevOps commands
+- **3D Tech Globe**: Interactive visualization of technology stack and tools
+- **Modern Design**: Dark theme with smooth animations and responsive layout
+- **Performance Optimized**: Built with Next.js 15 for optimal performance
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **3D Graphics**: Three.js / React Three Fiber
+- **Typography**: Geist font family
+- **Deployment**: GitHub Pages
+
+## 🏃‍♂️ Getting Started
+
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -16,21 +40,70 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Build & Export
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build and export the project for static hosting:
 
-## Learn More
+```bash
+npm run build
+npm run export
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deployment to GitHub Pages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is configured for deployment to GitHub Pages:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Push to GitHub**: Make sure your code is pushed to a GitHub repository
 
-## Deploy on Vercel
+2. **Deploy using GitHub CLI**:
+   ```bash
+   npm run deploy
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Or deploy manually**:
+   ```bash
+   npm run build
+   npm run export
+   gh repo create your-portfolio --public
+   git add .
+   git commit -m "Deploy portfolio"
+   git push origin main
+   gh repo edit --enable-pages --pages-source-path="/out"
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📁 Project Structure
+
+```
+src/
+├── app/                 # Next.js app directory
+├── components/          # React components
+│   ├── Terminal.tsx     # Interactive terminal component
+│   ├── EnhancedGlobe3D.tsx # 3D tech visualization
+│   ├── HeroSection.tsx  # Main hero section
+│   ├── Navbar.tsx       # Navigation component
+│   └── ContactSection.tsx # Contact form
+└── ...
+```
+
+## 🎯 Key Components
+
+### Terminal Component
+- Authentic terminal appearance with 70x22 character resolution
+- Realistic typing animation with variable speed
+- DevOps-focused command demonstrations
+- Auto-scrolling and cursor blinking effects
+
+### 3D Tech Globe
+- Interactive 3D visualization of technology stack
+- Responsive design with proper spacing
+- Smooth animations and hover effects
+
+## 📧 Contact
+
+- **Email**: arzanashraf03@gmail.com
+- **LinkedIn**: [Sheikh Arzan Ashraf](https://linkedin.com/in/your-profile)
+- **GitHub**: [arzan03](https://github.com/arzan03)
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
